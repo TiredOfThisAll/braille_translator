@@ -13,9 +13,9 @@ for label in res:
     value += 1
 
 plt.figure((46000))
-plt.plot(points_x, points_y, color='blue')  # Построение точек
-plt.xlabel('Epoch / 8')  # Название оси X
-plt.ylabel('Loss')  # Название оси Y
-plt.title('Процес навчання')  # Заголовок графика
-plt.grid(True)  # Добавление сетки на график (по желанию)
-plt.show()  # Показать график
+plt.plot(points_x, points_y, color='blue')
+plt.xlabel('Epoch / 8')
+plt.ylabel('Loss')
+plt.title('Learning process')
+plt.grid(True)
+plt.show()
