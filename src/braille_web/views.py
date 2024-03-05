@@ -27,7 +27,7 @@ check_expired_files_thread = Thread(target=delete_expired_files).start()
 
 
 def main_page(request):
-    template = loader.get_template("polls/main.html")
+    template = loader.get_template("braille_web/main.html")
     return HttpResponse(template.render(request=request))
 
 
