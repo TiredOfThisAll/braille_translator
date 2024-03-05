@@ -1,0 +1,26 @@
+{% extends "polls/layout.html" %}
+{% load static %}
+{% block content %}
+    <div class="card">
+        <div class="upload-form">
+            <div>Available formats: .png .jpeg .jpg .zip</div>
+            <input type="file" accept=".jpg, .jpeg, .png, .zip">
+            <button onclick="handleUpload()">Upload File</button>
+        </div>
+        <div class="additional-form">
+            Additional options
+            <div>
+                <select name="language" id="language">
+                    <option value="english">english</option>
+                    <option value="russian">russian</option>
+                </select>
+                Include:
+                <div><input type="checkbox" checked id="image-checkbox">Image</div>
+                <div><input type="checkbox" checked id="translation-checkbox">Translation</div>
+                <div><input type="checkbox" checked id="braille-checkbox">Braille</div>
+            </div>
+        </div>
+    </div>
+    <div class="element-container"></div>
+    {% csrf_token %}
+{% endblock content %}

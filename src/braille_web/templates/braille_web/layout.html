@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <script type="text/javascript" src="{% static 'braille_web/main.js' %}" defer></script>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'braille_web/style.css' %}">
+        <title>Braille AI Translator</title>
+        {% block head %}
+        {% endblock head %}
+    </head>
+
+    <body>
+        <header>
+            <a class="braille-logo" href="{% url 'braille_web:main_page' %}">
+                AI Braille Translator
+            </a>
+        </header>
+        <div class="main-container">
+            <main>
+                {% block content %}
+                {% endblock content %}
+            </main>
+        </div>
+    </body>
+</html>

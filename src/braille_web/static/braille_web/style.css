@@ -1,0 +1,152 @@
+li a {
+    color: green;
+}
+
+body {
+    background-color: #e1e1e1;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: grid;
+    background-color: #0d6efd;
+    justify-content: center;
+    align-items: center;
+}
+
+.braille-logo {
+    color: white;
+    text-decoration: none;
+    font-size: xxx-large;
+    font-family: sans-serif;
+}
+
+.card {
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: dashed 2px #000;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+.upload-form {
+    margin: 20px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upload-form > button {
+    height: 35%;
+    width: 40%;
+    background-color: #0d6efd;
+    border-radius: 5px;
+    color: #fff;
+    align-self: center;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+.additional-form {
+    margin: 20px;
+}
+
+.additional-form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.additional-form > div > select {
+    background-color: #0d6efd;
+    border-radius: 5px;
+    color: #fff;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+.additional-form > div > div > input {
+    transform: scale(2);
+    margin: 12px;
+}
+
+.content {
+    display: flex;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 20px;
+    width: calc(100% - 20px);
+}
+
+.element-container {
+    width: 100%;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+.content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.content > div > a > button {
+    /* background-color: #0d6efd; */
+    background-color: gray;
+    font-size: x-large;
+    font-family: sans-serif;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.content > div > a > button:hover{
+    cursor: pointer;
+}
+
+#green {
+    transition: width 1s ease-in-out;
+}
+
+.progress-container {
+    width: 100%;
+    height: 20px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: groove;
+}
+
+.progress-green {
+    height: 20px;
+    background-color: green;
+    border-radius: 15px;
+    width: 0%;
+}
+
+[type=file] {
+    display: none;
+}
